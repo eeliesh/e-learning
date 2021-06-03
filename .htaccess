@@ -1,0 +1,5 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^demo.dreamvibe.ro$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.demo.dreamvibe.ro$
+#RewriteCond %{REQUEST_URI} !public/
+#RewriteRule (.*) /public/$1 [L]
